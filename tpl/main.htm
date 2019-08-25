@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="nojs">
+<head>
+<title>Game</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="game.css" type="text/css" />
+
+<script src="jquery-3.4.1.js"> </script>
+<script src="game.js" defer> </script>
+
+<script>
+const numberError = '%jsNumberError%';
+</script>
+
+</head>
+<body>
+ 
+<H1>%guessTheNumber%</H1>
+<div class="game_btn" id="block_start">
+	<button id="start_game"> %starGame% </button>
+</div>
+
+<div class="game_btn hidden" id="block_quess">
+	<input type="text" id="my_quess" name="number" value="" maxlength="4">
+	<button id="make_quess"> %makeGuess%</button>
+</div>
+
+<div class="game_btn hidden" id="block_small">
+	<H3><span id="nr_small"></span> %tooSamll% </H3>
+</div>
+<div class="game_btn hidden" id="block_big">
+	<H3><span id="nr_big"></span> %tooBig% </H3>
+</div>
+<div class="game_btn hidden" id="block_the_number">
+	<H3><span id="nr_ok"></span> %theNumber% </H3>
+</div>
+
+</body>
+</html>
